@@ -8,8 +8,7 @@
 **Unidad:** 1.2 – Estándares Web
 **Estudiante:** Juan Diego Torres
 **Repositorio:** [https://github.com/diegotorres006/icc-ppw-u1-miPrimeraPagina](https://github.com/diegotorres006/icc-ppw-u1-miPrimeraPagina)
-**Página desplegada (GitHub Pages):** (añade tu URL de GitHub Pages si la tienes)
-
+**Página desplegada (GitHub Pages):** (https://diegotorres006.github.io/icc-ppw-u1-Practica2/)
 ---
 
 ## 🧱 Estructura HTML utilizada
