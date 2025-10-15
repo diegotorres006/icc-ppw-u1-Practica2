@@ -169,10 +169,10 @@ titulo.addEventListener("mouseout", function() {
 
 ## Capturas de pantalla del proyecto final
 
-Incluye dos imágenes en `assets/images/` y referencia relativo en el README:
+Incluye dos imágenes 
 
-```markdown
+
 ![Proyecto - sin CSS](Sin_CSS.png)
 ![Proyecto - con CSS y JS](Con_CSS.png)
-```
+
 
