@@ -22,7 +22,7 @@
 | `<main>` / `<section>`   | Agrupa el contenido principal            | Dos secciones: tabla de elementos y etiquetas exploradas                                        |
 | `<table>`                | Muestra los elementos estudiados         | Tabla con id `tablaElementos`                                                                   |
 | `<figure>`               | Contenedor para imagen con pie de foto   | Logo HTML5 dentro de `<figure>` con `<figcaption>`                                              |
-| `<div id="progresoDiv">` | Barra de progreso implementada con `div` | Usado en lugar de `<progress>`                                                                  |
+| `<div id="progresoDiv">` | Division implementada con `div`          | Organizacion de la pagina                                                                       |
 | `<footer>`               | Pie de página                            | Texto con autor y asignatura                                                                    |
 
 ---
@@ -32,7 +32,7 @@
 | Etiqueta                 | Descripción                            | Implementación                                   |
 | ------------------------ | -------------------------------------- | ------------------------------------------------ |
 | `<figure>`               | Contenedor para imagen con pie de foto | `figure` con `img` y `figcaption`                |
-| `<div id="progresoDiv">` | Barra de progreso creada con `div`     | Barra con estilo en CSS en lugar de `<progress>` |
+| `<div id="progresoDiv">` | Divisiòn `div`     | Barra con estilo en CSS` |
 
 **Fragmento del HTML (tomado de tu `index.html`):**
 
@@ -42,12 +42,9 @@
   <figcaption>Logo representativo del lenguaje HTML5</figcaption>
 </figure>
 
-<!-- Barra de progreso hecha con div -->
-<div id="progresoDiv" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="height:18px;"></div>
+<!-- Barra hecha con div -->
+<div id="progresoDiv" style="height:18px;"></div>
 ```
-
-> **Nota:** Recomendado: mover la imagen localmente a `assets/images/html5-logo.svg` para que GitHub Pages la sirva sin depender de enlaces externos.
-
 ---
 
 # Práctica 2 – Adición de CSS y JavaScript (estructura del profesor, con tu código)
@@ -65,14 +62,11 @@
 Estructura final del proyecto (ajusta si tu estructura es distinta):
 
 ```
-icc-ppw-u1-mi_pagina_web/
+icc-ppw-u1-Practica2/
 │
 ├── index.html
 ├── style.css
 ├── script.js
-└── assets/
-    └── images/
-        └── html5-logo.svg
 ```
 
 ---
@@ -91,9 +85,6 @@ icc-ppw-u1-mi_pagina_web/
 <script defer src="script.js"></script>
 </body>
 ```
-
-*Tu `index.html` ya incluye estas líneas.*
-
 ---
 
 ### 3. Estilos aplicados con CSS (tabla como en la guía del profesor)
@@ -105,38 +96,32 @@ icc-ppw-u1-mi_pagina_web/
 | `table` (`#tablaElementos`) | `width:100%; border-collapse:collapse; background:#fff;`                    | Tabla responsiva con celdas con borde     |
 | `th, td`                    | `border:1px solid #ddd; padding:8px; text-align:left;`                      | Estilos de celdas                         |
 | `button`                    | `background-color:#28a745; color:white; padding:8px 12px;`                  | Botón con hover declarado                 |
-| `#progresoDiv`              | `height:18px; background-color:black; width:70%;` (ejemplo)                 | Barra de progreso (usa `role` y `aria-*`) |
+| `#progresoDiv`              | ` background-color:black;  (ejemplo)`                                       | Barra de progreso negra                   |
 
-**Fragmentos de CSS (tal cual en `style.css`, con recomendación de ajustar `div` selector):**
+**Fragmentos de CSS:**
 
 ```css
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
-  margin: 0;
-  padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
 }
 
 header {
-  background-color: #0044cc;
-  color: white;
-  text-align: center;
-  padding: 1rem;
+    background-color: #0044cc;
+    color: white;
+    text-align: center;
+    padding: 1rem;
 }
 
-/* ... (resto igual) ... */
-
-/* Recomendación: reemplaza la regla global `div` por `#progresoDiv` */
-#progresoDiv {
-  background-color: black;
-}
 ```
 
 ---
 
-### 4. Interactividad agregada con JavaScript (ejemplos y explicación)
+### 4. Interactividad agregada con JavaScript 
 
-**Código en `script.js` (tal cual):**
+**Código en `script.js`:**
 
 ```javascript
 document.getElementById("agregarFila").addEventListener("click", function() {
@@ -167,9 +152,6 @@ titulo.addEventListener("mouseout", function() {
 ---
 
 ## Capturas de pantalla del proyecto final
-
-Incluye dos imágenes 
-
 
 ![Proyecto - sin CSS](Sin_CSS.png)
 ![Proyecto - con CSS y JS](Con_CSS.png)
